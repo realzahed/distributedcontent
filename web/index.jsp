@@ -70,9 +70,9 @@
                   <img data-src="assets/img/banner/engineering.png" alt="First slide" src="assets/img/banner/engineering.png">
                 <div class="container">
                   <div class="carousel-caption hidden-xs">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-bsu" href="#" role="button">Sign up today</a></p>
+                    <h1>More ways to access your content</h1>
+                    <p>In todays fast track world, having access to your content at the right time is important. We deliver this to you at the right moment. Find out how by Signing Up or Logging In to your account</p>
+                    <p><a class="showForm btn btn-bsu" href="#" role="button">Sign up today</a></p>
                   </div>
                 </div>
               </div>
@@ -80,8 +80,8 @@
                   <img data-src="assets/img/banner/nowait.png" alt="Second slide" src="assets/img/banner/nowait.png">
                 <div class="container">
                   <div class="carousel-caption hidden-xs">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h1>No Wait, No Weight</h1>
+                    <p>The days of carrying boatload of books around are over. Use DCAC to access your content from your smartphone or desktop. It&apos;s that easy.</p>
                     <p><a class="btn btn-outline" href="#" role="button">Learn more</a></p>
                   </div>
                 </div>
@@ -90,9 +90,9 @@
                   <img data-src="assets/img/banner/dcet.png" alt="Third slide" src="assets/img/banner/dcet.png">
                  <div class="container">
                   <div class="carousel-caption hidden-xs">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <h1>Deccan College of Engineering and Technology Project</h1>
+                    <p>Visit our <a href="http://deccancollege.ac.in">College Website</a> to know more.</p>
+                    <p><a class="btn btn-primary" href="http://deccancollege.ac.in" role="button">Visit Now</a></p>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,6 @@
                 </div>
             </div>
             <div class="alert alert-dismissable hidden-xs hidden-sm" id="responsive" style="background-color: #f7f1f0;">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <dl style="text-align: justify;">
                     <dt>Responsive Layout</dt>
                     <img class="hidden-sm hidden-md" style="padding: 10px;" src="assets/img/responsivelog.png" width="240" alt="responsive"/>
@@ -170,13 +169,9 @@
     </div><!-- /.container -->
 </section><!--/.main-->
 <script>
-    $('#myCarousel').carousel({
-            interval:   4000
-    });
-    $('#ebookimg').hover(
-       function(){ $(this).addClass('animated tada') },
-       function(){ $(this).removeClass('animated tada') }
-);
+$('#myCarousel').carousel({
+        interval:   4000
+});
 </script>
 <jsp:include page="includesPage/_footer.jsp"></jsp:include>
 </body>

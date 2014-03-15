@@ -1,29 +1,5 @@
 <style type="text/css">
-    #topLogin {
-      background-color: #f7f5fa;
-      color: #fff;
-      margin-bottom: 20px;
-      margin-top: -20px;
-      -moz-box-shadow: inset 0 -10px 5px -7px #888;
-      -webkit-box-shadow: inset 0 -10px 5px -7px #888;
-      box-shadow: inset 0 -10px 5px -7px #888;
-    }
-    #signUp {
-      background-color: #e74c3c;
-      margin-bottom: 20px;
-      margin-top: -20px;
-      -moz-box-shadow: inset 0 -10px 5px -7px #222;
-      -webkit-box-shadow: inset 0 -10px 5px -7px #222;
-      box-shadow: inset 0 -10px 5px -7px #222;
-    }
-    #adminLogin {
-      background-color: #f8f8f8;
-      margin-bottom: 20px;
-      margin-top: -20px;
-      -moz-box-shadow: inset 0 -10px 5px -7px #c5c5c5;
-      -webkit-box-shadow: inset 0 -10px 5px -7px #c5c5c5;
-      box-shadow: inset 0 -10px 5px -7px #c5c5c5;
-    }
+    #topLogin{background-color:#f7f5fa;color:#fff;margin-bottom:20px;margin-top:-20px;-moz-box-shadow:inset 0 -10px 5px -7px #888;-webkit-box-shadow:inset 0 -10px 5px -7px #888;box-shadow:inset 0 -10px 5px -7px #888}#signUp{background-color:#e74c3c;margin-bottom:20px;margin-top:-20px;-moz-box-shadow:inset 0 -10px 5px -7px #222;-webkit-box-shadow:inset 0 -10px 5px -7px #222;box-shadow:inset 0 -10px 5px -7px #222}#adminLogin{background-color:#f8f8f8;margin-bottom:20px;margin-top:-20px;-moz-box-shadow:inset 0 -10px 5px -7px #c5c5c5;-webkit-box-shadow:inset 0 -10px 5px -7px #c5c5c5;box-shadow:inset 0 -10px 5px -7px #c5c5c5}
 </style>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -34,8 +10,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand visible-lg" href="index.jsp"><img src="../assets/img/logo.png" width="30" alt="logo-nav"/> Major Project <em><small>dcac</small></em></a>
-      <a class="navbar-brand hidden-lg" href="index.jsp"><img src="../assets/img/logo.png" width="20" alt="logo-nav"/> <em><small>dcac</small></em></a>
+      <a class="navbar-brand visible-lg" href="index.jsp"><img src="http://i.imgur.com/GOQ1LDH.png" width="30" alt="logo-nav"/> Major Project <em><small>dcac</small></em></a>
+      <a class="navbar-brand hidden-lg" href="index.jsp"><img src="http://i.imgur.com/GOQ1LDH.png" width="20" alt="logo-nav"/> <em><small>dcac</small></em></a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav hidden-xs">
@@ -72,7 +48,7 @@
         <div class="row">
           <div class="col-md-4 col-md-push-4" style="margin: 1%;">
             <div class="card card-signin" style="background-color: #302244;color: #fff;" id= "loginForm">
-                <img class="img-circle profile-img hidden-xs" src="../assets/img/multi/default.png" alt="">
+                <img class="img-circle profile-img hidden-xs" src="http://i.imgur.com/Aivv3ph.png" alt="">
                 <form class="form-signin" autocomplete="on" method="post" action="loginServlet"  name="login">
                     <h6 class="form-signin-heading text-center" style="color: #f2f2f2;">Welcome Back!<br /><small>You&apos;re almost there.</small></h6> 
                     <div class="form-group">
@@ -103,7 +79,7 @@
         <div class="container">
            <div class="col-md-4 col-md-push-4" style="margin: 1%;">
              <div class="card card-signin">
-                 <img class="img-circle profile-img hidden-xs" src="../assets/img/multi/avatar_happy.png" alt="">
+                 <img class="img-circle profile-img hidden-xs" src="http://i.imgur.com/sVsG5hv.png" alt="">
                 <form class="form-signin" autocomplete="on" method="POST" action="register" name="registerServlet">
                     <h6 class="form-signin-heading text-center">Create an Account<br /><small>It takes less than a minute</small></h6>
                     <div class="form-group">
@@ -137,7 +113,7 @@
     <div class="container">
         <div class="col-md-4 col-md-push-4" style="margin: 1%;"> 
             <div class="card card-signin" style="background-color: #2c3e50;color: #fff;">
-              <img class="img-circle profile-img hidden-xs" src="../assets/img/multi/profile.png" alt="">
+              <img class="img-circle profile-img hidden-xs" src="http://i.imgur.com/f0UYbtD.png" alt="">
                 <form class="form-signin" autocomplete="on" method="post" action="admin_login">
                     <h6 class="form-signin-heading text-center" style="color: #fff;">Administrator Login<br /><small>Caution! Dragons Ahead</small></h6>
                     <div class="form-group">
@@ -163,7 +139,6 @@
     </div>
 </div>
 <!--/.Admin Login-->
-<script src="../js/headerJoinScript.js"></script>
    <%
     if (session.getAttribute("admin") != null){
         %>
@@ -221,9 +196,8 @@ $(document).ready(function () {
     });
 });
 </script>
-<script src="../js/application.js"></script>
+<script src="../js/jquery-1.7.2.min.js"></script>
 <%
     }
 %>
-
 <div class="container" id="loadSearches"></div>

@@ -1,3 +1,6 @@
+<style>
+.navbar-wrapper{top:0;left:0;right:0;z-index:20;margin-top:20px}.navbar-wrapper .container{padding-left:0;padding-right:0}.navbar-wrapper .navbar{padding-left:15px;padding-right:15px}.navbar-content{width:320px;padding:15px;padding-bottom:0}.navbar-content:after,.navbar-content:before{display:table;content:"";line-height:0}.navbar-nav.navbar-right:last-child{margin-right:15px!important}.navbar-footer{background-color:#DDD}.navbar-footer-content{padding:15px}.dropdown-menu{padding:0;overflow:hidden}.nav>li>a:focus,.nav>li>a:hover{text-decoration:none}.icon-header-cart{background:url("http://i.imgur.com/Hpf9X2L.png") center center no-repeat;background-size:41px 35px;width:60px;position:relative;-webkit-transition:.2s;-moz-transition:.2s;-o-transition:.2s;transition:.2s}
+</style>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="user.user"%>
@@ -19,70 +22,18 @@
         }
         else {printName = userName;}
     %>
-    <style>
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 20;
-        margin-top: 20px;
-    }
-    /* Flip around the padding for proper display in narrow viewports */
-    .navbar-wrapper .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .navbar-wrapper .navbar {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .navbar-content {
-        width:320px;
-        padding: 15px;
-        padding-bottom:0px;
-    }
-    .navbar-content:before, .navbar-content:after {
-        display: table;
-        content: "";
-        line-height: 0;
-    }
-    .navbar-nav.navbar-right:last-child {
-        margin-right: 15px !important;
-    }
-    .navbar-footer {
-        background-color:#DDD;
-    }
-    .navbar-footer-content { padding:15px 15px 15px 15px; }
-    .dropdown-menu {
-        padding: 0px;
-        overflow: hidden;
-    }
-    .nav > li > a:hover, .nav > li > a:focus {
-        text-decoration: none;
-    }
-    .icon-header-cart {
-        background: url('../assets/img/multi/cart.png') center center no-repeat;
-        background-size: 41px 35px;
-        width: 60px;
-        position: relative;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
-        }
-    </style>
+    
     <nav class="navbar navbar-default" role="navigation">
      <div class="container-fluid">
           <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-              <a class="navbar-brand visible-lg" href="index.jsp"><img src="../assets/img/logo.png" width="30" alt="logo-nav"/> Major Project <em><small>dcac</small></em></a>
-              <a class="navbar-brand hidden-lg" href="index.jsp"><img src="../assets/img/logo.png" width="20" alt="logo-nav"/> <em><small>dcac</small></em></a>
+           </button>
+           <a class="navbar-brand visible-lg" href="index.jsp"><img src="http://i.imgur.com/GOQ1LDH.png" width="30" alt="logo-nav"/> Major Project <em><small>dcac</small></em></a>
+           <a class="navbar-brand hidden-lg" href="index.jsp"><img src="http://i.imgur.com/GOQ1LDH.png" width="20" alt="logo-nav"/> <em><small>dcac</small></em></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav hidden-xs">
@@ -92,7 +43,7 @@
                 <li class="visible-xs"><a href="addToCart_view.jsp" class ="showForm"><i class="fa fa-shopping-cart fa-fa fa-lg"></i> View Cart</a></li>
             </ul>
             <ul class="nav navbar-right hidden-xs">
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/multi/default.png" class="img-thumbnail" width="45">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://i.imgur.com/Aivv3ph.png" class="img-thumbnail" width="45">
                   <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
@@ -100,12 +51,12 @@
                                 <div class="row">
                                     <div class="col-md-5 hidden-xs hidden-sm">
                                         <a href="userinfo.jsp?uid=<%= uid %>">
-                                            <img src="../assets/img/multi/default.png" class="img-thumbnail">
+                                            <img src="http://i.imgur.com/Aivv3ph.png" class="img-thumbnail">
                                         </a>
                                     </div>  
                                     <div class="col-md-5 visible-sm pull-left">
                                         <a href="userinfo.jsp?uid=<%= uid %>">
-                                            <img src="../assets/img/multi/default.png" class="img-thumbnail" width="120">
+                                            <img src="http://i.imgur.com/Aivv3ph.png" class="img-thumbnail" width="120">
                                         </a>
                                     </div>
                                     <div class="col-md-7">
@@ -146,7 +97,7 @@
             <ul class="nav navbar-nav visible-xs">
                 <div class="media">
                     <a class="pull-left" href="userinfo.jsp?uid=<%= uid %>">
-                        <img src="../assets/img/multi/default.png" class="media-object img-thumbnail" width="90">
+                        <img src="http://i.imgur.com/Aivv3ph.png" class="media-object img-thumbnail" width="90">
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading" style="font-size: 95%;"><%= printName %></h4>
@@ -187,78 +138,67 @@
            </div>
         </div>
     </div>
-</div>
+  </div>
 </nav>
-
 <%
     if (session.getAttribute("admin") != null){
         %>
-        <script type="text/javascript">
-    $(document).ready(function (){
-                
-        $('#search').keyup (function (){
-           searchbar = $('#search').val();
+<script type="text/javascript">
+var $, document, searchbar;
+$(document).ready(function () {
+    'use strict';
+    $('#search').keyup(function () {
+        searchbar = $('#search').val();
             //searchbar = $('#search').attr('value');
-            if (searchbar.length >= 3){
-                //$('#loadSearches').load('findProductLoad.jsp', {searchbar:searchbar});
-                            
-                $('#loadSearches').css('display');
-                $.get('findProductLoad.jsp', {searchbar:searchbar}, function (data){
+        if (searchbar.length >= 3) {
+                //$('#loadSearches').load('findProductLoad.jsp', {searchbar:searchbar});         
+            $('#loadSearches').css('display');
+            $.get('findProductLoad.jsp', {searchbar: searchbar}, function (data) {
                     //alert (data);
-                    if (data.length > 760){
-                        $('#loadSearches').html(data).slideDown(500);
-                    }
-                    else {
-                        $('#loadSearches').slideUp(500);
-                        $('#loadSearches').html("");
-                    }
-                });
-                       
-            }else {
-                 $('#loadSearches').slideUp(500);
-                $('#loadSearches').html("");
-            }
-        });
+                if (data.length > 760) {
+                    $('#loadSearches').html(data).slideDown(500);
+                } else {
+                    $('#loadSearches').slideUp(500);
+                    $('#loadSearches').html("");
+                }
+            });
+        } else {
+            $('#loadSearches').slideUp(500);
+            $('#loadSearches').html("");
+        }
     });
-            
+});      
 </script>
 <%
     } else {
         %>
 <script type="text/javascript">
-    $(document).ready(function (){
-        $('#search').keyup (function (){
-            searchbar = $('#search').val();
-            if (searchbar.length >= 3){
-                //$('#loadSearches').load('findProductLoad.jsp', {searchbar:searchbar});
-                            
-                $('#loadSearches').css('display');
-                $.get('findProductLoad_1.jsp', {searchbar:searchbar}, function (data){
+var $, document, searchbar;
+$(document).ready(function () {
+    'use strict';
+    $('#search').keyup(function () {
+        searchbar = $('#search').val();
+        if (searchbar.length >= 3) {
+                //$('#loadSearches').load('findProductLoad.jsp', {searchbar:searchbar});            
+            $('#loadSearches').css('display');
+            $.get('findProductLoad_1.jsp', {searchbar: searchbar}, function (data) {
                     //alert (data);
-                    if (data.length > 760){
-                        $('#loadSearches').hide().html(data).slideDown(500);
-                    }
-                    else {
-                        $('#loadSearches').slideUp(500);
-                        $('#loadSearches').html("");
-                    }
-                });
-                       
-            }else {
-                 $('#loadSearches').slideUp(500);
-                $('#loadSearches').html("");
-            }
-        });
-    });     
+                if (data.length > 760) {
+                    $('#loadSearches').hide().html(data).slideDown(500);
+                } else {
+                    $('#loadSearches').slideUp(500);
+                    $('#loadSearches').html("");
+                }
+            });
+        } else {
+            $('#loadSearches').slideUp(500);
+            $('#loadSearches').html("");
+        }
+    });
+});
 </script>
 <%
     }
 %>
 <div class="container" id="loadSearches"></div>
-<script src="../js/application.js"></script>
-<script type="text/javascript">
-$('#account').hover(
-       function(){ $(this).addClass('animated flash') },
-       function(){ $(this).removeClass('animated flash') }
-)
-</script>
+<script src="../js/jquery-1.7.2.min.js"></script>

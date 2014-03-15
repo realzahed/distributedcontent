@@ -124,19 +124,8 @@
             return false;
             });
     </script>
-    <script type="text/javascript">
-    $(document).on('click', '.panel-heading span.clickable', function(e){
-        var $this = $(this);
-            if(!$this.hasClass('panel-collapsed')) {
-                    $this.parents('.panel').find('.panel-body').slideUp();
-                    $this.addClass('panel-collapsed');
-                    $this.find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-            } else {
-                    $this.parents('.panel').find('.panel-body').slideDown();
-                    $this.removeClass('panel-collapsed');
-                    $this.find('i').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-            }
-    });
-    </script>
-  </body>
+<script type="text/javascript">
+$(document).on("click",".panel-heading span.clickable",function(e){var t=$(this);if(!t.hasClass("panel-collapsed")){t.parents(".panel").find(".panel-body").slideUp();t.addClass("panel-collapsed");t.find("i").removeClass("fa-chevron-up").addClass("fa-chevron-down")}else{t.parents(".panel").find(".panel-body").slideDown();t.removeClass("panel-collapsed");t.find("i").removeClass("fa-chevron-down").addClass("fa-chevron-up")}})
+</script>
+</body>
 </html>

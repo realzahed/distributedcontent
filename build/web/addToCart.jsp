@@ -147,6 +147,6 @@
     </div>
   </div>
  </div>
-<script src="assets/js/application.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
 </body>
 </html>

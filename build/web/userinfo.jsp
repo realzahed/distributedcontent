@@ -18,49 +18,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
     <script src="js/jquery-1.7.2.min.js"></script>
     <style type="text/css">
-    #MyOrders a {
-        color: #000;
-    }
-    .user-info-block {
-        font-size: 18px;
-    }
-    .profile {
-        color: #40826d;
-        background-color: #e8e8e8;
-        border: 1px solid transparent;
-        -webkit-border-top-left-radius: 10px;
-        -webkit-border-top-right-radius: 10px;
-        -moz-border-radius-topleft: 10px;
-        -moz-border-radius-topright: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .profile img {
-        display: block;
-        border: 10px solid rgba(255, 255, 255, 0.3);
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .profile p {
-        text-align: center;
-        color: #000;
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .list-group-item {
-        background-color: #fff;
-        border-radius: 0px !important;
-        border: 1px solid #DDD;
-    }
-    .list-group-item a {
-        text-decoration: none;
-    }
-    .list-group-item:hover {
-        border-left: 3px solid #18bc9c;
-        background-color: #F8F7F5;
-        text-decoration: none;
-    }
+    #MyOrders a{color:#000}.user-info-block{font-size:18px}.profile{color:#40826d;background-color:#e8e8e8;border:1px solid transparent;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-moz-border-radius-topleft:10px;-moz-border-radius-topright:10px;border-top-left-radius:10px;border-top-right-radius:10px}.profile img{display:block;border:10px solid rgba(255,255,255,.3);margin:0 auto;margin-top:10px;margin-bottom:10px}.profile p{text-align:center;color:#000;font-weight:700;font-size:18px}.list-group-item{background-color:#fff;border-radius:0!important;border:1px solid #DDD}.list-group-item a{text-decoration:none}.list-group-item:hover{border-left:3px solid #18bc9c;background-color:#F8F7F5;text-decoration:none}
     </style>
 </head>
 <body>
@@ -183,7 +141,7 @@
      <div id="grad" style="text-align: left;padding-top: 5px;">
          <h4 style="text-align: center;">Order History</h4>  <hr/>
          <div class="table-responsive">
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered">
                 <tr>
                     <th>Order ID</th>
                     <th>Product Name</th>

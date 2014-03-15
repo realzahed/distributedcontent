@@ -1,36 +1,12 @@
 <style>
-    footer{
-        padding: 20px 0 20px 0;
-        background-color: #f7f7f7;
-        box-shadow: 0px 0px 20px #ccc;
-    }
-    .links {
-        color: #cccccc;
-    }
-    .college {
-        color: #cccccc;
-    }
-    .scrollup {
-        background: url("../assets/img/footer/icon_gototop.png") no-repeat scroll 0 0 transparent;
-        bottom: 20px;
-        display: none;
-        height: 40px;
-        position: fixed;
-        right: 20px;
-        text-indent: -9999px;
-        width: 40px;
-        opacity: 0.6;
-    }
-    .scrollup:hover {
-        opacity: 0.9;
-    }
+footer{padding:20px 0;background-color:#f7f7f7;box-shadow:0 0 20px #ccc}.college,.links{color:#ccc}.scrollup{background:url(http://i.imgur.com/145EQtM.png) no-repeat scroll 0 0 transparent;bottom:20px;display:none;height:40px;position:fixed;right:20px;text-indent:-9999px;width:40px;opacity:.6}.scrollup:hover{opacity:.9}
 </style>
   <footer>
       <div class="container" style="color: #384142;">
         <div class="row">
          <div class="col-sm-2 col-lg-1">
           <a href="index.jsp" target="_blank">
-              <img src="../assets/img/logo.png" width="60" alt="dcac">
+              <img src="http://i.imgur.com/GOQ1LDH.png" width="60" alt="dcac">
           </a>
         </div>
         <div class="col-sm-8">
@@ -67,18 +43,5 @@
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 // scroll-to-top button show and hide
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-    }
-});
-// scroll-to-top animate
-$('.scrollup').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-});
+$(document).ready(function(){$(window).scroll(function(){if($(this).scrollTop()>100){$(".scrollup").fadeIn()}else{$(".scrollup").fadeOut()}});$(".scrollup").click(function(){$("html, body").animate({scrollTop:0},600);return false})})
 </script>
