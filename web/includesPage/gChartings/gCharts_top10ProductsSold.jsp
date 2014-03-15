@@ -1,0 +1,81 @@
+<%@page import="java.util.Calendar"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="database.DB_Conn"%>
+<%@page import="java.sql.Connection"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<body>
+<%
+String top10products = "SELECT SUM( `product_quantity` ) AS solds,  `product_name` "
+                +" FROM  `sales` "
+                +" GROUP BY  `product_name` "
+                +" ORDER BY solds DESC  "
+                +" LIMIT 0 , 10 ;";
+
+    Connection c = new DB_Conn().getConnection();
+    Statement st = c.createStatement();
+
+    ArrayList<String> product = new ArrayList<String> ();
+    ArrayList<Integer> hits = new ArrayList<Integer> ();
+
+
+    product.clear();
+    hits.clear();
+
+    ResultSet rs = st.executeQuery(top10products);
+    while (rs.next()){
+        product.add(rs.getString("product_name"));
+        hits.add(rs.getInt("solds"));
+    }
+%>
+                
+<!--Loading the AJAX API-->
+    <script type="text/javascript" src="js/gclibrary/jsapi.js"></script>
+    <script type="text/javascript" src="js/gclibrary/core.js"></script>
+    <script type="text/javascript" src="js/gclibrary/core1.js"></script>
+                    
+    <div class="well-lg" style="border: 1px solid #d7e0e2;margin-top: 2%;width: 920px; height: 420px;">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+                google.setOnLoadCallback(drawChart);
+
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable
+                 
+      <% out.print("([ "
+                    + "['Product Name', 'Units Sold' ], ");
+          int i = 0 ;
+           while (i<= hits.size()-1){
+                if (i< hits.size()-1){
+                   out.println(
+                           "['"+product.get(i)+" ',  "
+                           +hits.get(i)+"  ],");
+                }
+                else {
+                   out.println(
+                           "['"+product.get(i)+"',  "
+                           +hits.get(i)+"  ] ");
+                }
+                i++;
+            }
+          out.print("]);");
+          %>
+          var options = {
+        title: 'Top 10 products sold',
+          vAxis: {title: "Units Sold"},
+          hAxis: {title: "Product Names"}
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div_lineTop10Sold'));
+      chart.draw(data, options);
+    }
+
+    </script>
+    <div id="chart_div_lineTop10Sold" style="width: 890px; height: 380px;"></div>
+
+</div> 
+      
+                
+</body> 
