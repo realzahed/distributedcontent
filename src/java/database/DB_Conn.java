@@ -12,7 +12,7 @@ public class DB_Conn {
     
     public Connection getConnection() throws SQLException, ClassNotFoundException  {
         Class.forName("com.mysql.jdbc.Driver"); 
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/"+database+"",""+username+"",""+password+""); 
+        con=DriverManager.getConnection("jdbc:mysql://mysql-env-2527962.j.layershift.co.uk/"+database+"",""+username+"",""+password+""); 
        // stm=con.createStatement(); 
         return con;
     }
