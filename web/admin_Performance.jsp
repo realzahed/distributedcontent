@@ -37,7 +37,7 @@
         %>
     <div class="container animated fadeInDownBig">
         <div class="row">
-          <div class="col-md-3 visible-lg">
+          <div class="col-md-3">
                 <div  id="sidebar-nav" class="list-group">
                     <a href="admin_Performance.jsp" class="list-group-item list-group-item-info"><i class="fa fa-dashboard fa-lg fa-fw"></i> Dashboard</a>
                     <a href="admin_addProduct.jsp" class="list-group-item"><i class="fa fa-plus-square fa-lg fa-fw"></i> Add Product</a>
@@ -93,7 +93,6 @@
                 %>
                 <div class="panel-heading">
                         <h3 class="panel-title">Administrator Dashboard</h3>
-                        <span class="pull-right clickable"><i class="fa fa-chevron-up"></i></span>
                 </div>
                 <div class="panel-body text-center">
                     <a style="border-radius: 0px;" class="btn btn-danger" href="admin_manageProduct.jsp"><span class="badge"><%= qty %></span> Items below Quantity</a>     
